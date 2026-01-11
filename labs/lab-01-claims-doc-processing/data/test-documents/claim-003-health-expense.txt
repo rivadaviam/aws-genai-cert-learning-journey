@@ -1,0 +1,39 @@
+HEALTH INSURANCE CLAIM
+
+Patient Information:
+Name: Robert Johnson
+Policy Number: HLT-2024-45678
+Member ID: MEM-789012
+Date of Birth: 1978-11-22
+
+Medical Service Details:
+Service Date: March 10, 2024
+Provider: City General Hospital
+Provider Address: 789 Medical Center Drive, Anytown, ST 12345
+Provider NPI: 1234567890
+
+Service Type: Emergency Room Visit
+
+Diagnosis: Acute appendicitis
+Procedure: Appendectomy (laparoscopic)
+
+Description:
+Patient presented to emergency room with severe abdominal pain. After examination 
+and CT scan, acute appendicitis was diagnosed. Emergency laparoscopic appendectomy 
+was performed on March 10, 2024.
+
+Billing Information:
+- Emergency room visit: $2,500.00
+- CT scan: $1,800.00
+- Surgical procedure: $15,000.00
+- Anesthesia: $2,200.00
+- Hospital stay (1 day): $3,500.00
+- Medications: $450.00
+
+Total Claim Amount: $25,450.00
+
+Insurance Coverage:
+- Deductible: $1,000.00 (already met)
+- Co-insurance: 20%
+- Amount to be reimbursed: $19,560.00
+

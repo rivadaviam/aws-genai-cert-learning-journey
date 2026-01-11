@@ -1,0 +1,43 @@
+INSURANCE CLAIM DOCUMENT
+
+Policyholder: Maria Garcia
+Policy Number: POL-2024-67890
+Claim Number: CLM-2024-002
+
+INCIDENT REPORT
+
+Date: February 3, 2024
+Claim Type: Property Damage - Water Damage
+
+Property Address:
+456 Oak Avenue, Suite 5B
+Springfield, IL 62701
+
+Incident Description:
+On February 3, 2024, at approximately 3:00 AM, a water pipe burst in the apartment 
+above mine, causing significant water damage to my unit. The water leaked through 
+the ceiling, damaging:
+
+1. Living room ceiling and drywall
+2. Hardwood flooring in living room (approximately 200 sq ft)
+3. Personal electronics (television, sound system)
+4. Furniture (sofa, coffee table)
+5. Personal belongings in affected area
+
+The property management company was notified immediately. A restoration company 
+assessed the damage on February 4, 2024.
+
+Estimated Damages:
+- Structural repairs: $12,000
+- Flooring replacement: $5,500
+- Electronics replacement: $3,200
+- Furniture replacement: $4,800
+- Personal belongings: $2,000
+
+Total Claim Amount: $27,500.00
+
+Supporting Documents:
+- Photos of damage
+- Restoration company estimate
+- Receipts for temporary accommodations
+

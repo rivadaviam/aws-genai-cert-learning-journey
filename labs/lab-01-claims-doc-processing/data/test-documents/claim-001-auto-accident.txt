@@ -1,0 +1,32 @@
+INSURANCE CLAIM FORM
+
+Claimant Information:
+Name: John Smith
+Policy Number: POL-2024-12345
+Date of Birth: 1985-03-15
+Contact Phone: (555) 123-4567
+Email: john.smith@email.com
+
+Incident Details:
+Date of Incident: 2024-01-15
+Time: 14:30
+Location: 123 Main Street, Anytown, ST 12345
+Type of Claim: Auto Accident
+
+Description:
+On January 15, 2024, at approximately 2:30 PM, I was driving my 2020 Honda Accord 
+(license plate ABC-1234) northbound on Main Street. Another vehicle, a 2018 Ford 
+F-150 (license plate XYZ-5678), ran a red light at the intersection of Main Street 
+and Oak Avenue and collided with the front passenger side of my vehicle.
+
+The other driver appeared to be at fault as they failed to stop at the red light. 
+Police were called and a report was filed (Report #2024-001234).
+
+Damage Assessment:
+- Front bumper: Severe damage
+- Passenger side door: Moderate damage
+- Passenger side mirror: Destroyed
+- Estimated repair cost: $8,500
+
+Claim Amount Requested: $8,500.00
+

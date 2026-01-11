@@ -1,0 +1,54 @@
+# Lab XX: [Lab Name]
+
+## Scenario
+
+[Describe the scenario and use case]
+
+## Architecture
+
+[Describe the architecture]
+
+## Prerequisites
+
+- AWS CLI configured
+- Terraform >= 1.0
+- Python 3.12+
+- [Additional prerequisites]
+
+## Quick Start
+
+### 1. Local Development
+
+```bash
+cd labs/lab-XX-[lab-name]/app
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+cp .env.example .env
+# Edit .env with your configuration
+python main.py [args]
+```
+
+### 2. Deploy Infrastructure
+
+```bash
+cd labs/lab-XX-[lab-name]/infra/terraform
+terraform init
+terraform plan
+terraform apply
+```
+
+### 3. Test
+
+[Testing instructions]
+
+### 4. Cleanup
+
+```bash
+terraform destroy
+```
+
+## Architecture Decisions
+
+See [ADR.md](./ADR.md) for detailed architectural decisions.
+
