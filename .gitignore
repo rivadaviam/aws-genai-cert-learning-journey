@@ -52,3 +52,15 @@ Thumbs.db
 crash.log
 crash.*.log
 
+# AI Tools & IDE configs
+.agent/
+.claude/
+.cursor/
+
+# BMAD Framework (local tool)
+_bmad/
+
+# BMAD working files (keep only blog-articles)
+_bmad-output/*.md
+_bmad-output/implementation-artifacts/
+_bmad-output/planning-artifacts/
