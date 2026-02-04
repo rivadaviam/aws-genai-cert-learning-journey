@@ -77,16 +77,9 @@ That ADR saved me real money. But more importantly, it taught me something:
 
 ## The Build-to-Learn Framework
 
-That near-miss crystallized into a methodology:
+That near-miss crystallized into a methodology I now follow for every lab: build real things, document every decision, and share the messy middle.
 
-### 1. Build Real Things
-Not tutorials. Not sandboxes. Production-grade systems with real constraints.
-
-### 2. Document Every Decision
-Architecture Decision Records for the big choices. Comments for the small ones. Capture the *why*, not just the *what*.
-
-### 3. Share the Messy Middle
-Don't just show the finished product. Show the wrong turns, the trade-offs, the moments of doubt.
+Not tutorials. Not sandboxes. Production-grade systems with real constraints — the kind where a wrong architecture choice costs actual money. For every significant decision, I write an Architecture Decision Record capturing the *why*, not just the *what*. And when I share the work, I don't polish away the wrong turns. The trade-offs, the moments of doubt, the diagrams I scrapped at midnight — those are the parts that actually help someone else learn.
 
 ---
 
@@ -183,22 +176,15 @@ Slight quality reduction for significant cost savings
 
 ## Model Selection: The Certification Question
 
-If you're preparing for AIP-C01, model selection is a core topic. Here's my real-world decision matrix:
+If you're preparing for AIP-C01, model selection is a core exam topic — and this project gave me a real-world taste of the trade-offs involved.
 
-**Why Sonnet v1 instead of v2?**
-
-This surprised me. Claude 3.5 Sonnet v2 is newer and "better," but:
-- On-demand throughput may not be available in all regions
-- Provisioned Throughput might be required
-- v1 is stable and widely available
-
-For a learning project that others will deploy, **availability beats marginal quality improvements**.
+One decision surprised me. Claude 3.5 Sonnet v2 is newer and, on paper, "better" than v1. But when I dug into availability, I discovered that on-demand throughput isn't guaranteed in all regions and might require Provisioned Throughput. For a learning project that other developers will clone and deploy in their own accounts, availability matters more than marginal quality improvements. So I chose v1 — a stable, widely available model that anyone can spin up without provisioning headaches. It was a small decision, but exactly the kind of reasoning the certification expects you to articulate.
 
 ---
 
 ## The Infrastructure
 
-Everything is Terraform. Here's the Lambda configuration:
+The entire stack is defined in Terraform, which means anyone can deploy it with a single `terraform apply`. Here's the Lambda at the heart of it:
 
 ```hcl
 resource "aws_lambda_function" "processor" {
@@ -219,46 +205,31 @@ resource "aws_lambda_function" "processor" {
 }
 ```
 
-**Why 5 minutes and 512MB?**
-
-Document processing with three Bedrock calls takes 30-90 seconds typically. 5 minutes provides buffer for:
-- Cold starts
-- Larger documents
-- Network latency to Bedrock
-
-512MB is the sweet spot—enough memory for boto3 and JSON processing without overpaying.
+The numbers tell a story. A typical run — three sequential Bedrock calls — takes 30 to 90 seconds, but I set the timeout to 5 minutes to absorb cold starts, larger documents, and network latency. Memory sits at 512 MB: enough headroom for boto3 and JSON processing without overpaying for capacity the function will never touch. Both values came from testing, not guessing — another benefit of building before theorizing.
 
 ---
 
 ## What I Learned (Beyond the Tech)
 
-### Documentation is a Feature
-Writing ADRs forced me to justify every decision. Several times I changed my approach mid-documentation because writing it out revealed flaws.
+The biggest surprise wasn't technical — it was how much the act of *writing things down* changed my engineering decisions. ADRs forced me to justify every choice, and several times I reversed course mid-sentence because explaining a decision out loud revealed the flaw in it. Documentation isn't a chore you do after the code works; it's a design tool you use while the code is still taking shape.
 
-### Local Development Saves Money
-The system supports local execution before AWS deployment:
+Building locally first saved me real money, too. The system supports running the full pipeline on your own machine (`python main.py --input claim.txt --output result.json`), so I processed dozens of test documents before a single Lambda invocation or Bedrock API call ever hit my AWS bill.
 
-```bash
-python main.py --input claim.txt --output result.json
-```
+And here's what connected everything back to the certification: every core topic from the Skill Builder course — model selection criteria, prompt engineering, cost optimization, security best practices, serverless patterns — showed up organically in this one project. I didn't have to memorize them. I had to *use* them, and that made them stick.
 
-I processed dozens of test documents locally before incurring any Lambda or Bedrock costs.
+---
 
-### The Certification Topics Are Real
-Every topic I encountered in Skill Builder appeared in this implementation:
-- Model selection criteria
-- Prompt engineering
-- Cost optimization
-- Security best practices
-- Serverless patterns
+## What's Next
 
-Building something real made these concepts stick.
+This is just the beginning. I'm continuing to build through the AWS GenAI certification curriculum, turning each challenge into a production-ready implementation. More labs are coming — each one following the same Build-to-Learn principles: production-ready code you can actually deploy, every decision documented with ADRs, and the messy middle shared so you learn from my mistakes too.
+
+Want to follow along? Star the repo or [connect with me on LinkedIn](https://www.linkedin.com/in/martin-rivadavia/) to get notified when the next lab drops.
 
 ---
 
 ## Try It Yourself
 
-The entire project is open source:
+The entire project is open source. Clone it, read the ADRs, poke around the Terraform — and if you find a flaw in my implementation, [open an issue](https://github.com/rivadaviam/aws-genai-cert-learning-journey/issues). If you have a better approach, propose it.
 
 {% github rivadaviam/aws-genai-cert-learning-journey %}
 
@@ -277,27 +248,9 @@ terraform init && terraform apply
 
 ---
 
-## What's Next
-
-This is just the beginning.
-
-I'm continuing to build through the AWS GenAI certification curriculum, turning each challenge into a production-ready implementation. More labs are coming—each one following the same Build-to-Learn principles:
-
-- **Production-ready code** you can actually deploy
-- **Every decision documented** with ADRs
-- **The messy middle shared** so you learn from my mistakes too
-
-Want to follow along? Star the repo or [connect with me on LinkedIn](https://www.linkedin.com/in/martin-rivadavia/) to get notified when the next lab drops.
-
----
-
 ## The Invitation
 
-If you're preparing for a certification, don't just study.
-
-**Build something real. Document your decisions. Share your journey.**
-
-If you find a flaw in my implementation, [open an issue](https://github.com/rivadaviam/aws-genai-cert-learning-journey/issues). If you have a better approach, propose it. If you build something using the framework, tell me about it.
+If you're preparing for a certification, don't just study. Build something real. Document your decisions. Share your journey. And if you build something using this framework, tell me about it — I want to see what you create.
 
 > Certifications prove you can learn.
 > Projects prove you can build.
