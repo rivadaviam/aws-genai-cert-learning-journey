@@ -1,20 +1,25 @@
 ---
 type: LinkedIn Post
 amplifies: genai-cert-professional-devto.md
-article_link: "[UPDATE ONCE DEV.TO ARTICLE IS PUBLISHED]"
+article_link: https://dev.to/rivadaviam/the-exam-that-felt-like-a-project-backlog-passing-aws-certified-generative-ai-developer--2ljo
 images:
-  - Gen AI - Badge.png
-  - Gen AI Early - Badge.png
+  - genai-badge.png
+  - genai-early-adopter-badge.png
 ---
 
-<!-- IMAGES TO ATTACH: Upload both badge images directly to the LinkedIn post -->
-<!-- Gen AI - Badge.png -->
-<!-- Gen AI Early - Badge.png -->
+<!-- PUBLISHING INSTRUCTIONS -->
+<!-- 1. Upload both badge images directly to the LinkedIn post (no links in body) -->
+<!-- 2. Copy/paste the POST BODY below -->
+<!-- 3. Publish — then immediately post the FIRST COMMENT below as your own first comment -->
+
+<!-- ============================================================ -->
+<!-- POST BODY (no external links — keeps algorithmic reach high) -->
+<!-- ============================================================ -->
 
 I passed the AWS Certified Generative AI Developer – Professional. And because I took it as a Beta exam — before AWS had published pass rates or calibrated the difficulty publicly — I also received the Early Adopter badge. Two badges. One decision: go early, no safety net.
 
-🏅 [AWS Certified Generative AI Developer – Professional](https://www.credly.com/badges/7446afbf-7fa1-4450-be74-7e34e5454192)
-🏅 [AWS Early Adopter](https://www.credly.com/earner/earned/badge/c4bf319f-af9f-468a-a8c3-127712f2e2f1)
+🏅 AWS Certified Generative AI Developer – Professional
+🏅 AWS Early Adopter
 
 But the moment I keep thinking about didn't happen when the results came through. It happened at question 67.
 
@@ -32,9 +37,17 @@ If you're preparing for this certification: build something real before you stud
 
 If that resonates, here's where to go next:
 - **Just curious?** Follow along — I'm building the next lab now and documenting everything publicly on GitHub.
-- **Preparing for this cert?** Full breakdown of the study stack and Beta exam experience in the article: [UPDATE LINK ONCE DEV.TO ARTICLE PUBLISHED]
-- **Ready to build?** Pick one AWS GenAI service and build something with real trade-offs. Write one ADR. Ship it. That single decision will be worth more on exam day than any practice test score.
+- **Preparing for this cert?** Full breakdown in the comments 👇
+- **Ready to build?** Pick one AWS GenAI service, build something with real trade-offs, write one ADR, ship it. That single decision will be worth more on exam day than any practice test score.
 
 Build. Document. Share. Repeat.
 
 #BuildToLearn #AWSCommunity #LearnInPublic #AmazonBedrock #GenerativeAI
+
+<!-- ============================================================ -->
+<!-- FIRST COMMENT — post this immediately after publishing       -->
+<!-- ============================================================ -->
+
+Full breakdown of the study stack, the Beta exam experience, and the Build-to-Learn approach 👇
+
+🔗 https://dev.to/rivadaviam/the-exam-that-felt-like-a-project-backlog-passing-aws-certified-generative-ai-developer--2ljo
