@@ -22,11 +22,11 @@ I'd spent months preparing for this exam. More accurately: I'd spent months buil
 
 <p align="center">
   <a href="https://www.credly.com/badges/7446afbf-7fa1-4450-be74-7e34e5454192">
-    <img src="https://raw.githubusercontent.com/rivadaviam/aws-genai-cert-learning-journey/main/_bmad-output/blog-articles/Gen%20AI%20-%20Badge.png" width="150" alt="AWS Certified Generative AI Developer – Professional" />
+    <img src="https://raw.githubusercontent.com/rivadaviam/aws-genai-cert-learning-journey/main/_bmad-output/blog-articles/genai-badge.png" width="150" alt="AWS Certified Generative AI Developer – Professional" />
   </a>
   &nbsp;&nbsp;&nbsp;
   <a href="https://www.credly.com/earner/earned/badge/c4bf319f-af9f-468a-a8c3-127712f2e2f1">
-    <img src="https://raw.githubusercontent.com/rivadaviam/aws-genai-cert-learning-journey/main/_bmad-output/blog-articles/Gen%20AI%20Early%20-%20Badge.png" width="150" alt="AWS Early Adopter" />
+    <img src="https://raw.githubusercontent.com/rivadaviam/aws-genai-cert-learning-journey/main/_bmad-output/blog-articles/genai-early-adopter-badge.png" width="150" alt="AWS Early Adopter" />
   </a>
 </p>
 
