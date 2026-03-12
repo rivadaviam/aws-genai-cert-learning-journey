@@ -5,7 +5,6 @@ description: "85 questions. Beta exam. No pass rates. No score at the end. Here'
 tags: aws, amazonbedrock, generativeai, learninpublic
 series: Build-to-Learn with AWS GenAI
 cover_image: https://raw.githubusercontent.com/rivadaviam/aws-genai-cert-learning-journey/main/_bmad-output/blog-articles/cover-devto.png
-canonical_url: https://github.com/rivadaviam/aws-genai-cert-learning-journey
 ---
 
 *This is part of my [Build-to-Learn with AWS GenAI](https://dev.to/rivadaviam/the-build-to-learn-framework-how-a-near-disaster-taught-me-to-learn-in-public-c2e) series — where I share the messy middle of building production-grade GenAI systems on AWS, including the wrong turns.*
