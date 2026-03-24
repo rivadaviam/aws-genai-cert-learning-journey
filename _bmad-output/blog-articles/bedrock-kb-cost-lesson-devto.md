@@ -1,10 +1,9 @@
 ---
 title: "I Spent ~$363 in Two Days on Bedrock — Cheap Lesson or Expensive One?"
-published: false
+published: true
 description: A PDF Knowledge Base experiment taught me more about AWS GenAI billing than any pricing page. Here's what showed up on the invoice — and what I changed afterward.
-tags: aws, amazonbedrock, generativeai, learninpublic, rag
-cover_image: https://raw.githubusercontent.com/rivadaviam/aws-genai-cert-learning-journey/main/_bmad-output/blog-articles/rag-pdf-cost-anomaly.png
-canonical_url: https://github.com/rivadaviam/aws-genai-cert-learning-journey
+tags: aws, amazonbedrock, generativeai, learninpublic
+cover_image: https://raw.githubusercontent.com/rivadaviam/aws-genai-cert-learning-journey/main/_bmad-output/blog-articles/cover-devto.png
 series: Build-to-Learn with AWS GenAI
 ---
 

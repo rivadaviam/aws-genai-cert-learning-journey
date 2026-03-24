@@ -2,6 +2,7 @@
 
 **Type:** Amplification + proof / story  
 **Amplifies:** `bedrock-kb-cost-lesson-devto.md` (dev.to)  
+**Article (published):** https://dev.to/rivadaviam/i-spent-363-in-two-days-on-bedrock-cheap-lesson-or-expensive-one-3l48  
 **Platform:** LinkedIn  
 **Suggested image:** `_bmad-output/blog-articles/rag-pdf-cost-anomaly.png` (upload as the post image — the billing screenshot is the scroll-stopper)
 
@@ -41,7 +42,7 @@ If you've ever had a cloud bill teach you something, what did you change the nex
 
 Full write-up with numbers, what I misunderstood, and what I changed in my repo (including Lab 02 — foundations before big KB syncs):
 
-**[LINK TO DEV.TO ARTICLE — add after you publish]**
+https://dev.to/rivadaviam/i-spent-363-in-two-days-on-bedrock-cheap-lesson-or-expensive-one-3l48
 
 Learning journey (labs, ADRs — includes Lab 02 write-up):
 
@@ -79,9 +80,20 @@ Después cambié cómo construyo: **medir tokens y previsualizar chunks en local
 
 ---
 
+## First comment — Spanish (optional)
+
+Artículo completo en dev.to:
+
+https://dev.to/rivadaviam/i-spent-363-in-two-days-on-bedrock-cheap-lesson-or-expensive-one-3l48
+
+Repo de aprendizaje: https://github.com/rivadaviam/aws-genai-cert-learning-journey  
+Código del pipeline PDF → KB: https://github.com/rivadaviam/aws-pdf-rag-mr
+
+---
+
 ## Notes for the author
 
-- Replace the dev.to placeholder with the live URL once published.
+- **First comment URL** is set to the published article (see above).
 - Ensure **`rag-pdf-cost-anomaly.png`** is committed on `main` at `_bmad-output/blog-articles/` so the raw GitHub URL in the dev.to article resolves for readers.
 - Optional: pin the comment with links for visibility.
 - **Language:** The dev.to article is in **English** (matches the repo and global dev.to audience). Use the **Spanish** block above for LinkedIn if your network engages more in Spanish; keep **hashtags** as-is or localize only if you prefer.
