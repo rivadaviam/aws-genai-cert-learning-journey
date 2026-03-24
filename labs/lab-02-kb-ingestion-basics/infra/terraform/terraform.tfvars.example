@@ -1,0 +1,5 @@
+aws_region    = "us-east-1"
+project_name  = "lab02-kb-basics"
+environment   = "dev"
+# Must be globally unique — change this:
+bucket_suffix = "mr-your-unique-token"

@@ -1,0 +1,10 @@
+CLI Reference Fragment (synthetic sample for Lab 02)
+
+aws s3 cp LOCAL s3://BUCKET/raw/DOCSET/VERSION/file.pdf
+
+This path shape matters for event-driven pipelines: raw/<doc-set>/<version>/file.pdf
+lets downstream jobs infer document set and version without parsing the PDF.
+
+Before you sync thousands of pages to a Knowledge Base, estimate total tokens and
+preview chunk boundaries locally. Re-ingesting while you are still tuning chunking
+strategy can get expensive—measure first, sync once you trust the splits.

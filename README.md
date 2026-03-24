@@ -38,10 +38,13 @@ By sharing this journey, I hope to help others preparing for AIP-C01 understand 
 | Lab | What You Build | Core AWS Services | Key Outcomes |
 |-----|----------------|-------------------|--------------|
 | **[Lab 01: Insurance Claim Document Processing](./labs/lab-01-claims-doc-processing/)** | Automated document processing pipeline | Amazon S3, AWS Lambda, Amazon Bedrock | Serverless architecture, multi-model orchestration, event-driven processing |
+| **[Lab 02: KB Ingestion — Foundations First](./labs/lab-02-kb-ingestion-basics/)** | Local token/chunk sanity checks before Knowledge Base sync; optional scratch S3 | Amazon Bedrock Agent Runtime (optional retrieve), optional Amazon S3 | Cost-aware RAG prep, chunk preview, separation of ingestion vs retrieval |
+
+**Lab 02 companion (full PDF → KB pipeline code):** [rivadaviam/aws-pdf-rag-mr](https://github.com/rivadaviam/aws-pdf-rag-mr)
 
 **Coming soon:**
-- Lab 02: RAG (Retrieval-Augmented Generation) with vector databases
-- Lab 03: Multi-modal AI applications
+- Lab 03: Full RAG pipeline deep-dive (vector store, sync jobs, production chunking)
+- Lab 04: Multi-modal AI applications
 - Lab 04: Real-time AI inference patterns
 
 ## How to Use This Repository
@@ -112,6 +115,7 @@ Labs aren't just demos—they're structured like production code:
 ```
 labs/
   lab-01-claims-doc-processing/  # First lab: document processing
+  lab-02-kb-ingestion-basics/    # Foundations before KB scale (measure locally first)
     app/                          # Application code
     infra/                        # Infrastructure (Terraform)
     data/                         # Test data and samples
@@ -129,10 +133,10 @@ Each lab is self-contained and can be run independently.
 ## Roadmap
 
 **Planned Labs:**
-- **Lab 02: RAG with Vector Search** - Build a retrieval-augmented generation system using Amazon OpenSearch Serverless or Amazon Bedrock Knowledge Bases
-- **Lab 03: Multi-Modal AI** - Process images and text together using Claude 3.5 Sonnet's vision capabilities
-- **Lab 04: Real-Time AI Inference** - Build streaming AI applications with WebSockets and Bedrock
-- **Lab 05: Cost Optimization** - Compare model costs, implement caching, and optimize token usage
+- **Lab 03: Full RAG / vector pipeline** - End-to-end ingestion with OpenSearch Serverless or Bedrock Knowledge Bases (beyond Lab 02 foundations)
+- **Lab 04: Multi-Modal AI** - Process images and text together using Claude 3.5 Sonnet's vision capabilities
+- **Lab 05: Real-Time AI Inference** - Build streaming AI applications with WebSockets and Bedrock
+- **Lab 06: Cost Optimization** - Compare model costs, implement caching, and optimize token usage
 
 **Contributions welcome!** See [labs/_template/](./labs/_template/) for the lab structure template.
 
@@ -156,7 +160,7 @@ Each lab is self-contained and can be run independently.
 
 ## Getting Started
 
-Ready to dive in? Start with **[Lab 01: Insurance Claim Document Processing](./labs/lab-01-claims-doc-processing/)**. It's a complete, production-ready system that teaches serverless architecture, multi-model AI orchestration, and event-driven processing.
+Start with **[Lab 01: Insurance Claim Document Processing](./labs/lab-01-claims-doc-processing/)** for a full serverless document pipeline. If you are heading toward **RAG and Knowledge Bases**, read **[Lab 02: KB Ingestion — Foundations First](./labs/lab-02-kb-ingestion-basics/)** first so you measure token counts and chunk boundaries before you pay for large syncs.
 
 ```bash
 cd labs/lab-01-claims-doc-processing

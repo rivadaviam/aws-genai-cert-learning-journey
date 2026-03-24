@@ -37,6 +37,7 @@ terraform.rc
 lambda_function.zip
 
 # IDE
+.kiro/
 .vscode/
 .idea/
 *.swp
